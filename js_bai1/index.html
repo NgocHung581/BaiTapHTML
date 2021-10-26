@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1_js</title>
+    <link rel="stylesheet" href="./main.js">
+</head>
+
+<style>
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+</style>
+
+<body>
+    <input id="input1" type="number" placeholder="Enter a number" required>
+    <select name="Operation" id="operation">
+        <option value="addition">+</option>
+        <option value="subtraction">-</option>
+        <option value="multiplication">*</option>
+        <option value="division">/</option>
+    </select>
+    <input id="input2" type="number" placeholder="Enter a number" required>
+    <button id="equal" onclick="calculate();">=</button>
+    <input id="input-result" type="text" readonly>
+    <span id="message" style="color: red;"></span>
+
+    <script>
+        function calculate() {
+            var operation = document.getElementById('operation');
+            var num1 = document.getElementById('input1').value;
+            var num2 = document.getElementById('input2').value;
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            if (operation.value == "addition"){
+                document.getElementById('input-result').value = num1 + num2;
+            }
+            if (operation.value == "subtraction"){
+                document.getElementById('input-result').value = num1 - num2;
+            }
+            if (operation.value == "multiplication"){
+                document.getElementById('input-result').value = num1 * num2;
+            }
+            if (operation.value == "division"){
+                document.getElementById('input-result').value = num1 / num2;
+            }
+        }        
+    </script>
+</body>
+</html>
