@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    margin: 0 50px;
+}
+
+.content-header {
+    display: flex;
+    justify-content: center;
+}
+
+.content-equal {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content-avatar {
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.content-field {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.content-about {
+    text-align: justify;
+}
+
+.tilte {
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.content-about .about-detail {
+    line-height: 1.4;
+}
+
+.say {
+    font-size: 24px;
+}

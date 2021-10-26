@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 3</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <link rel="stylesheet" href="./icons/fontawesome-free-5.15.3-web/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <i class="fas fa-align-center icon-menu"></i>
+            <p class="name-page">Portfolio</p>
+            <div class="search">
+                <input type="text" class="search-input rounded-pill" placeholder="Search">
+                <i class="fas fa-search icon-search"></i>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="symbols">
+                <i class="fas fa-moon icon-moon"></i>
+                <i class="fas fa-plus-circle icon-plus"></i>
+                <i class="far fa-bell icon-bell"></i>
+            </div>
+            <div class="information">
+                <img src="https://images.unsplash.com/photo-1546456073-92b9f0a8d413?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ3MDcyNzY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="information-ava">
+                <p class="information-name">Aybuke C.</p>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+            <div class="content-left">
+                <i class="fas fa-home icon-home icons"></i>
+                <i class="far fa-clock icon-clock icons"></i>
+                <i class="far fa-calendar icon-calendar icons"></i>
+                <i class="fas fa-cog icon-setting icons"></i>
+            </div>
+            <div class="content-middle">
+                <div class="top-content">
+                    <p class="top-content-name">Projects</p>
+                    <p class="top-content-date">December, 12</p>
+                </div>
+
+                <div class="middle-content">
+                    <div class="middle-content-left">
+                        <div class="middle-content-left-progress">
+                            <p class="number">45</p>
+                            <p class="title"> In Progress</p>
+                            <span class="circle"></span>
+                        </div>
+                        <div class="middle-content-left-coming">
+                            <p class="number">24</p>
+                            <p class="title">Upcoming</p>
+                            <span class="circle"></span>
+                        </div>
+                        <div class="middle-content-left-project">
+                            <p class="number">62</p>
+                            <p class="title">Total Projects</p>
+                        </div>
+                    </div>
+
+                    <div class="middle-content-right">
+                        <p id="iconlist" class="icon-layout-list"><i class="fas fa-list-ul"></i></p>
+                        <p id="iconColumn"  class="icon-layout-column btn-active"><i class="fas fa-th-large"></i></p>
+                    </div>
+                </div>
+
+                <div class="bottom-content">
+                    <!-- Layout Column -->
+                    <div id="column" class="layout-column"> 
+                        <div class="row">
+                            <div class="col bg-1 bottom-content-progress">
+                              <div class="top-progress">
+                                  <p class="date">December 10, 2020</p>
+                                  <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                              </div>
+                              <div class="middle-progress">
+                                  <p class="name-project">Web Designing</p>
+                                  <p class="prototyping">Prototyping</p>
+                              </div>
+                              <div class="bottom-progress">
+                                  <p class="in-progress">Progress</p>
+                                  <div class="progress" style="height: 5px; margin-top: -10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%; background-color:#ff9729" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span class="percentage">60%</span>
+                              </div>
+                              <div class="clear"></div>
+                              <span class="line-separate"></span>
+                              <div class="footer-progress">
+                                  <div class="footer-progress-left">
+                                      <img src="https://images.unsplash.com/photo-1441786485319-5e0f0c092803?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ3OTU3OTA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                      <img src="https://images.unsplash.com/photo-1520529277867-dbf8c5e0b340?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ3OTU4MzI&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                      <span class="ava-add" style="color: #ff9729;"><i class="fas fa-plus"></i></span>
+                                  </div>
+                                  <div class="footer-progress-right rounded-pill">
+                                      <span class="day-left" style="color: #ff9729">2 Days Left</span>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col bg-2 bottom-content-progress">
+                                <div class="top-progress">
+                                    <p class="date">December 10, 2020</p>
+                                    <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                                </div>
+                                <div class="middle-progress">
+                                    <p class="name-project">Testing</p>
+                                    <p class="prototyping">Prototyping</p>
+                                </div>
+                                <div class="bottom-progress">
+                                    <p class="in-progress">Progress</p>
+                                    <div class="progress" style="height: 5px; margin-top: -10px;">
+                                      <div class="progress-bar" role="progressbar" style="width: 50%; background-color:#6400f0" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="percentage">50%</span>
+                                </div>
+                                <div class="clear"></div>
+                                <span class="line-separate"></span>
+                                <div class="footer-progress">
+                                    <div class="footer-progress-left">
+                                        <img src="https://images.unsplash.com/photo-1578489758854-f134a358f08b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTcxMDI&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTcxMjI&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #6400f0;"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <div class="footer-progress-right rounded-pill">
+                                        <span class="day-left" style="color: #6400f0;">2 Days Left</span>
+                                    </div>
+                                </div>
+                              </div>
+                            <div class="col bg-3 bottom-content-progress">
+                                <div class="top-progress">
+                                    <p class="date">December 10, 2020</p>
+                                    <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                                </div>
+                                <div class="middle-progress">
+                                    <p class="name-project">Svg Animations</p>
+                                    <p class="prototyping">Prototyping</p>
+                                </div>
+                                <div class="bottom-progress">
+                                    <p class="in-progress">Progress</p>
+                                    <div class="progress" style="height: 5px; margin-top: -10px;">
+                                      <div class="progress-bar" role="progressbar" style="width: 80%; background-color:#25594d" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="percentage">80%</span>
+                                </div>
+                                <div class="clear"></div>
+                                <span class="line-separate"></span>
+                                <div class="footer-progress">
+                                    <div class="footer-progress-left">
+                                        <img src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTcyNjE&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTcyNzQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #25594d;"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <div class="footer-progress-right rounded-pill">
+                                        <span class="day-left" style="color: #25594d;">2 Days Left</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-20">
+                            <div class="col bg-4 bottom-content-progress">
+                              <div class="top-progress">
+                                  <p class="date">December 10, 2020</p>
+                                  <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                              </div>
+                              <div class="middle-progress">
+                                  <p class="name-project">UI Development</p>
+                                  <p class="prototyping">Prototyping</p>
+                              </div>
+                              <div class="bottom-progress">
+                                  <p class="in-progress">Progress</p>
+                                  <div class="progress" style="height: 5px; margin-top: -10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 20%; background-color:#960055" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                  <span class="percentage">20%</span>
+                              </div>
+                              <div class="clear"></div>
+                              <span class="line-separate"></span>
+                              <div class="footer-progress">
+                                  <div class="footer-progress-left">
+                                      <img src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTkyOTg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                      <img src="https://images.unsplash.com/photo-1591973669966-52d2534d9087?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTkzMjY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                      <span class="ava-add" style="color: #960055; background-color: #fff0e6;"><i class="fas fa-plus"></i></span>
+                                  </div>
+                                  <div class="footer-progress-right rounded-pill" style="background-color: #fff0e6">
+                                      <span class="day-left" style="color: #960055">2 Days Left</span>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col bg-5 bottom-content-progress">
+                                <div class="top-progress">
+                                    <p class="date">December 10, 2020</p>
+                                    <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                                </div>
+                                <div class="middle-progress">
+                                    <p class="name-project">Data Analysis</p>
+                                    <p class="prototyping">Prototyping</p>
+                                </div>
+                                <div class="bottom-progress">
+                                    <p class="in-progress">Progress</p>
+                                    <div class="progress" style="height: 5px; margin-top: -10px;">
+                                      <div class="progress-bar" role="progressbar" style="width: 60%; background-color:#029943" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="percentage">60%</span>
+                                </div>
+                                <div class="clear"></div>
+                                <span class="line-separate"></span>
+                                <div class="footer-progress">
+                                    <div class="footer-progress-left">
+                                        <img src="https://images.unsplash.com/photo-1582917626755-57038b4388f4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTk0ODE&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                        <img src="https://images.unsplash.com/photo-1602788034509-f07ae0b32f33?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTk0OTg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #029943; background-color: #f7f2f2"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <div class="footer-progress-right rounded-pill" style="background-color: #f7f2f2">
+                                        <span class="day-left" style="color: #029943;">2 Days Left</span>
+                                    </div>
+                                </div>
+                              </div>
+                            <div class="col bg-6 bottom-content-progress">
+                                <div class="top-progress">
+                                    <p class="date">December 10, 2020</p>
+                                    <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                                </div>
+                                <div class="middle-progress">
+                                    <p class="name-project">Web Designing</p>
+                                    <p class="prototyping">Prototyping</p>
+                                </div>
+                                <div class="bottom-progress">
+                                    <p class="in-progress">Progress</p>
+                                    <div class="progress" style="height: 5px; margin-top: -10px;">
+                                      <div class="progress-bar" role="progressbar" style="width: 40%; background-color:#6400f0" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <span class="percentage">40%</span>
+                                </div>
+                                <div class="clear"></div>
+                                <span class="line-separate"></span>
+                                <div class="footer-progress">
+                                    <div class="footer-progress-left">
+                                        <img src="https://images.unsplash.com/photo-1607503873903-c5e95f80d7b9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTk1MTA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                        <img src="https://images.unsplash.com/photo-1605555579795-81a19ff0ad50?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTk1MjU&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #6400f0; background-color: #f7f2f2"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <div class="footer-progress-right rounded-pill" style="background-color: #f7f2f2">
+                                        <span class="day-left" style="color: #6400f0;">2 Days Left</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Layout List -->
+                    <div id="list" class="layout-list d-none">
+                        <div class="row bottom-content-list bg-1">
+                            <div class="bottom-content-list-left">
+                                <p class="name-project">Web Designing</p>
+                                <p class="prototyping">Prototyping</p>
+                                <p class="date">December 10, 2020</p>
+                            </div>
+                            <div class="bottom-content-list-middle">
+                                <p class="in-progress">Progress</p>
+                                <div class="progress" style="height: 5px; margin-top: -10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%; background-color:#ff9729" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="percentage">60%</span>
+                            </div>
+                            <div class="bottom-content-list-right">
+                                <div class="members">
+                                    <div class="image">
+                                        <img src="https://images.unsplash.com/photo-1441786485319-5e0f0c092803?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ3OTU3OTA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                        <img src="https://images.unsplash.com/photo-1520529277867-dbf8c5e0b340?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ3OTU4MzI&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #ff9729;"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <span class="day-left" style="color: #ff9729">2 Days Left</span>
+                                </div>
+                                <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                            </div>
+                        </div>
+                        <div class="row bottom-content-list bg-2">
+                            <div class="bottom-content-list-left">
+                                <p class="name-project">Testing</p>
+                                <p class="prototyping">Prototyping</p>
+                                <p class="date">December 10, 2020</p>
+                            </div>
+                            <div class="bottom-content-list-middle">
+                                <p class="in-progress">Progress</p>
+                                <div class="progress" style="height: 5px; margin-top: -10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%; background-color:#6400f0" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="percentage">50%</span>
+                            </div>
+                            <div class="bottom-content-list-right">
+                                <div class="members">
+                                    <div class="image">
+                                        <img src="https://images.unsplash.com/photo-1578489758854-f134a358f08b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTcxMDI&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTcxMjI&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #6400f0;"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <span class="day-left" style="color: #6400f0">2 Days Left</span>
+                                </div>
+                                <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                            </div>
+                        </div>
+                        <div class="row bottom-content-list bg-3">
+                            <div class="bottom-content-list-left">
+                                <p class="name-project">Svg Animations</p>
+                                <p class="prototyping">Prototyping</p>
+                                <p class="date">December 10, 2020</p>
+                            </div>
+                            <div class="bottom-content-list-middle">
+                                <p class="in-progress">Progress</p>
+                                <div class="progress" style="height: 5px; margin-top: -10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%; background-color:#25594d" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="percentage">80%</span>
+                            </div>
+                            <div class="bottom-content-list-right">
+                                <div class="members">
+                                    <div class="image">
+                                        <img src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTcyNjE&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTcyNzQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #25594d;"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <span class="day-left" style="color: #25594d">2 Days Left</span>
+                                </div>
+                                <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                            </div>
+                        </div>
+                        <div class="row bottom-content-list bg-4">
+                            <div class="bottom-content-list-left">
+                                <p class="name-project">UI Development</p>
+                                <p class="prototyping">Prototyping</p>
+                                <p class="date">December 10, 2020</p>
+                            </div>
+                            <div class="bottom-content-list-middle">
+                                <p class="in-progress">Progress</p>
+                                <div class="progress" style="height: 5px; margin-top: -10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 20%; background-color:#960055" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="percentage">20%</span>
+                            </div>
+                            <div class="bottom-content-list-right">
+                                <div class="members">
+                                    <div class="image">
+                                        <img src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTkyOTg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                      <img src="https://images.unsplash.com/photo-1591973669966-52d2534d9087?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTkzMjY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #960055;"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <span class="day-left" style="color: #960055">2 Days Left</span>
+                                </div>
+                                <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                            </div>
+                        </div>
+                        <div class="row bottom-content-list bg-5">
+                            <div class="bottom-content-list-left">
+                                <p class="name-project">Data Analysis</p>
+                                <p class="prototyping">Prototyping</p>
+                                <p class="date">December 10, 2020</p>
+                            </div>
+                            <div class="bottom-content-list-middle">
+                                <p class="in-progress">Progress</p>
+                                <div class="progress" style="height: 5px; margin-top: -10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%; background-color:#029943" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="percentage">60%</span>
+                            </div>
+                            <div class="bottom-content-list-right">
+                                <div class="members">
+                                    <div class="image">
+                                        <img src="https://images.unsplash.com/photo-1582917626755-57038b4388f4?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTk0ODE&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                        <img src="https://images.unsplash.com/photo-1602788034509-f07ae0b32f33?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTk0OTg&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #029943;"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <span class="day-left" style="color: #029943">2 Days Left</span>
+                                </div>
+                                <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                            </div>
+                        </div>
+                        <div class="row bottom-content-list bg-6">
+                            <div class="bottom-content-list-left">
+                                <p class="name-project">Web Designing</p>
+                                <p class="prototyping">Prototyping</p>
+                                <p class="date">December 10, 2020</p>
+                            </div>
+                            <div class="bottom-content-list-middle">
+                                <p class="in-progress">Progress</p>
+                                <div class="progress" style="height: 5px; margin-top: -10px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 40%; background-color:#6400f0" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <span class="percentage">40%</span>
+                            </div>
+                            <div class="bottom-content-list-right">
+                                <div class="members">
+                                    <div class="image">
+                                        <img src="https://images.unsplash.com/photo-1607503873903-c5e95f80d7b9?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTk1MTA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-1">
+                                        <img src="https://images.unsplash.com/photo-1605555579795-81a19ff0ad50?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ4MTk1MjU&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="This is a picture" class="ava-2">
+                                        <span class="ava-add" style="color: #6400f0;"><i class="fas fa-plus"></i></span>
+                                    </div>
+                                    <span class="day-left" style="color: #6400f0">2 Days Left</span>
+                                </div>
+                                <p class="icon-actions"><i class="fas fa-ellipsis-v"></i></p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="content-right">
+                <p class="content-right-title">Client Messages</p>
+                <div class="content-right-messages">
+                    <img src="https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ5MTE0MjY&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="" class="content-right-messages-ava">
+                    <div class="content-right-messages-detail">
+                        <div class="content-right-messages-detail-top">
+                            <p class="content-right-messages-detail-top-name">Stephanie</p>
+                            <p class="content-right-messages-detail-top-icon-star"><i class="far fa-star"></i></p>
+                        </div>
+                        <div class="content-right-messages-detail-middle">
+                            <p class="content-right-messages-detail-middle-description">I got your first assignment. It was quite good.🥳 We can continue with the next assignment.</p>
+                        </div>
+                        <div class="content-right-messages-detail-bottom">
+                            <p class="content-right-messages-detail-bottom-date">Dec, 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right-messages">
+                    <img src="https://images.unsplash.com/photo-1615813967515-e1838c1c5116?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ5MTE0MzE&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="" class="content-right-messages-ava">
+                    <div class="content-right-messages-detail">
+                        <div class="content-right-messages-detail-top">
+                            <p class="content-right-messages-detail-top-name">Mark</p>
+                            <p class="content-right-messages-detail-top-icon-star"><i class="far fa-star"></i></p>
+                        </div>
+                        <div class="content-right-messages-detail-middle">
+                            <p class="content-right-messages-detail-middle-description">Hey, can tell me about progress of project? I'm waiting for your reponse.</p>
+                        </div>
+                        <div class="content-right-messages-detail-bottom">
+                            <p class="content-right-messages-detail-bottom-date">Dec, 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right-messages">
+                    <img src="https://images.unsplash.com/photo-1546456073-ea246a7bd25f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ5MTE4OTA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="" class="content-right-messages-ava">
+                    <div class="content-right-messages-detail">
+                        <div class="content-right-messages-detail-top">
+                            <p class="content-right-messages-detail-top-name">David</p>
+                            <p class="content-right-messages-detail-top-icon-star"><i class="far fa-star"></i></p>
+                        </div>
+                        <div class="content-right-messages-detail-middle">
+                            <p class="content-right-messages-detail-middle-description">Awesome!😍 I like it. We can schedule a meeting for the nex one.</p>
+                        </div>
+                        <div class="content-right-messages-detail-bottom">
+                            <p class="content-right-messages-detail-bottom-date">Dec, 12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right-messages">
+                    <img src="https://images.unsplash.com/photo-1550639524-a6f58345a2ca?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmFjZXx8fHx8fDE2MzQ5MTE5OTQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=200" alt="" class="content-right-messages-ava">
+                    <div class="content-right-messages-detail">
+                        <div class="content-right-messages-detail-top">
+                            <p class="content-right-messages-detail-top-name">Jessica</p>
+                            <p class="content-right-messages-detail-top-icon-star"><i class="far fa-star"></i></p>
+                        </div>
+                        <div class="content-right-messages-detail-middle">
+                            <p class="content-right-messages-detail-middle-description">I'm really impressed! Can't wait to see the final result.</p>
+                        </div>
+                        <div class="content-right-messages-detail-bottom">
+                            <p class="content-right-messages-detail-bottom-date">Dec, 12</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var layoutColumn = document.getElementById('column');
+        var layoutList = document.getElementById('list');
+        var iconLayoutColumn = document.getElementById('iconColumn');
+        var iconLayoutList = document.getElementById('iconlist');
+
+        iconLayoutList.onclick = function() {
+            if (layoutList.classList.contains('d-none'))
+            {
+                layoutList.classList.toggle('d-none');
+                layoutColumn.classList.toggle('d-none');
+                iconLayoutList.classList.toggle('btn-active');
+                iconLayoutColumn.classList.toggle('btn-active');
+            }
+        }
+
+        iconLayoutColumn.onclick = function() {
+            if (layoutColumn.classList.contains('d-none'))
+            {
+                layoutColumn.classList.toggle('d-none');
+                layoutList.classList.toggle('d-none');
+                iconLayoutColumn.classList.toggle('btn-active');
+                iconLayoutList.classList.toggle('btn-active');
+            }
+    }
+
+
+    </script>
+</body>
+</html>
