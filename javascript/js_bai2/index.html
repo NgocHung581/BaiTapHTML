@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2_js</title>
+</head>
+
+<style>
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+    table, tr, td {
+        border: 1px solid;
+    }
+    
+    table {
+        width: 100%;
+    }
+
+    tr {
+        height: 20px;
+    }
+
+    td {
+        width: 5%;
+    }
+
+</style>
+
+<body>
+<div>
+    <label for="row">The number of rows: </label>
+    <input type="number" id="row" placeholder="Enter rows" required>
+</div>
+
+<div style="margin-top: 5px;">
+    <label for="column">The number of columns: </label>
+    <input type="number" id="column" placeholder="Enter columns" required>
+</div>
+
+<div style="margin-top: 5px;">
+    <input type="button" id="btn-draw" value="Draw">
+</div>
+
+<script>
+    var btn_draw = document.getElementById('btn-draw');
+    var numberRows = document.getElementById('row');
+    var numberColumns = document.getElementById('column');
+
+    btn_draw.onclick = function () {
+        var newTable = document.createElement('table');
+        if (numberRows.value == "" || numberColumns.value == "")
+        {
+            alert('Please fill in all field!')
+        }
+        else {
+            if (numberRows.value <= 0 || numberColumns.value <= 0)
+            {
+                alert("Please enter positive number!");
+            }
+            else {
+                for (var i = 0; i < numberRows.value; i++) {
+                    var newRow = document.createElement("tr");   
+                    for (var j = 0; j < numberColumns.value; j++) 
+                    {
+                        var newColumn = document.createElement('td');
+                        newRow.appendChild(newColumn);
+                    }
+                    newTable.appendChild(newRow);
+                }
+                document.body.appendChild(newTable);
+            }
+        }
+    }
+</script>
+</body>
+</html>
