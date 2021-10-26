@@ -1,0 +1,514 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.bg-1 {
+    background-color: #fccdac;
+}
+
+.bg-2 {
+    background-color: #e2cef5;
+}
+
+.bg-3 {
+    background-color: #c9ebf2;
+}
+
+.bg-4 {
+    background-color: #fcc5e9;
+}
+
+.bg-5 {
+    background-color: #9dfcd9;
+}
+
+.bg-6 {
+    background-color: #b3b0e8;
+}
+
+html {
+
+}
+
+body {
+    background-color: #c6ddf5;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+.header .header-left {
+    display: flex;
+}
+
+.header-left .icon-menu {
+    line-height: 2.1;
+}
+
+.header-left .name-page {
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-left .search {
+    width: 500px;
+    position: relative;
+}
+
+.search .search-input {
+    width: 100%;
+    padding: 5px 20px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 0 2px;
+}
+
+.search .icon-search {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+    font-size: 20px;
+}
+
+.header .header-right {
+    display: flex;
+}
+
+.header-right .symbols {
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+}
+
+.header-right .symbols::after {
+    content: "";
+    display: block;
+    border-right: 1px solid #ccc;
+    height: 25px;
+    position: absolute;
+    right: 9px;
+    top: 1px;
+}
+
+.symbols .icon-plus {
+    padding: 0 5px;
+}
+
+
+.header-right .information {
+    display: flex;
+}
+
+.information .information-ava {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.information .information-name {
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.content-left {
+    display: flex;
+    flex-direction: column;
+    width: 1%;
+    padding: 40px 28px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.icons {
+    margin-bottom: 30px;
+}
+
+.icon-home {
+    border-radius: 50%;
+    border: 1px solid;
+    background: black;
+    color: white;
+    padding: 4px 4px;
+}
+
+.content-middle {
+    width: 60%;
+    background-color: white;
+    border-radius: 20px;
+    max-height: 950px;
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.middle-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: -20px;
+}
+
+.middle-content .middle-content-left {
+    display: flex;
+}
+
+.middle-content-left .middle-content-left-progress {
+
+}
+
+.middle-content-left .middle-content-left-coming {
+    padding: 0 25px;
+}
+
+.middle-content-left .middle-content-left-project {
+
+}
+
+.middle-content-left .number {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.middle-content-left .title {
+    font-weight: 500;
+    display: inline-block;
+}
+
+.middle-content-left .circle {
+    border: 1px solid;
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.middle-content .middle-content-right {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.middle-content-right .icon-layout-list {
+    margin-bottom: 0;
+    margin-right: 5px;
+    padding-right: 10px;
+}
+
+.middle-content-right .icon-layout-column {
+    margin-bottom: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.bottom-content {
+    padding: 20px;
+    margin-top: -10px;
+}
+
+.btn-active {
+    border: 1px solid;
+    background-color: black;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+/* Layout column */
+.bottom-content-progress {
+    margin-right: 10px;
+    margin-left: 8px;
+    border-radius: 20px;
+}
+
+.bottom-content-progress .top-progress {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px 0;
+}
+
+.top-progress .date {
+    font-weight: 300;
+}
+
+.bottom-content-progress .middle-progress {
+    text-align: center;
+}
+
+.middle-progress .name-project {
+    font-weight: bold;
+}
+
+.middle-progress .prototyping {
+    margin-top: -15px;
+}
+
+.bottom-content-progress .bottom-progress {
+    padding: 0 5px;
+}
+
+.bottom-progress .percentage {
+    float: right;
+    font-weight: bold;
+}
+
+.line-separate {
+    display: block;
+    border-top: 1px solid white;
+    margin: 0 -12px;
+}
+
+.footer-progress {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px;
+}
+
+.footer-progress .footer-progress-left {
+    display: flex;
+    position: relative;
+}
+
+.footer-progress-left .ava-1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.footer-progress-left .ava-2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+}
+
+.footer-progress-left .ava-add {
+    height: 30px;
+    width: 30px;
+    background-color: #fff0e6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+}
+
+.footer-progress .footer-progress-right {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fff0e6;
+}
+
+.footer-progress-right .day-left {
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Layout list */
+.bottom-content .layout-list {
+    max-height: 640px;
+    overflow-y: scroll;
+}
+
+.bottom-content-list {
+    height: 100px;
+    margin: 0 0 20px;
+    border-radius: 10px;
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-content-list .bottom-content-list-left {
+    margin-top: 8px;
+    height: 100%;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bottom-content-list-left .name-project {
+    font-weight: bold;
+    /* Cắt dòng */
+    width: 121px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bottom-content-list-left .prototyping {
+    margin-top: -10px;
+}
+
+.bottom-content-list-left .date {
+    margin-top: -20px;
+    font-weight: 300;
+}
+
+.bottom-content-list .bottom-content-list-middle {
+    max-width: 60%;
+    margin-top: 10px;
+}
+
+
+.bottom-content-list-middle .in-progress {
+    font-weight: bold;
+}
+
+.bottom-content-list-middle .percentage {
+    float: right;
+    font-weight: bold;
+}
+
+.bottom-content-list .bottom-content-list-right {
+    max-width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    height: 100%;
+}
+
+.members .image {
+    position: relative;
+}
+
+.image .ava-1 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.image .ava-2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+}
+
+.image .ava-add {
+    height: 30px;
+    width: 30px;
+    background-color: #fff0e6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.members .day-left {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #fff0e6;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 8px;
+}
+
+.bottom-content-list-right .icon-actions {
+    margin-right: 10px;
+}
+
+.content-right {
+    width: 39%;
+    background-color: white;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+
+.content-right .content-right-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.content-right .content-right-messages {
+    display: flex;
+    padding: 20px;
+    position: relative;
+    margin-top: -15px;
+}
+
+.content-right .content-right-messages::before {
+    content: "";
+    border-top: 1px solid #e1e1e1;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+}
+
+.content-right-messages .content-right-messages-ava {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.content-right-messages .content-right-messages-detail {
+    width: 100%;
+}
+
+.content-right-messages-detail .content-right-messages-detail-top {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.content-right-messages-detail-top .content-right-messages-detail-top-name {
+
+}
+
+.content-right-messages-detail-middle .content-right-messages-detail-middle-description {
+    color: #848484;
+    margin-bottom: 0;
+    margin-top: -10px;
+}
+
+.content-right-messages-detail-bottom .content-right-messages-detail-bottom-date {
+    float: right;
+    color: #848484;
+}
+
+.column-active {
+    display: none;
+}
+
+
